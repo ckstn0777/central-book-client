@@ -1,0 +1,3 @@
+- [book](https://iconmonstr.com/book-17-svg/)
+- [chart](https://iconmonstr.com/chart-11-svg/)
+- [explore](https://iconmonstr.com/user-29-svg/)

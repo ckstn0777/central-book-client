@@ -1,0 +1,6 @@
+export { default as main_background } from './main_background.jpg'
+export { default as undraw_empty } from './undraw_empty.svg'
+export { default as noimage } from './noimage.gif'
+export { default as bookCoverOverlay } from './book-cover-overlay.png'
+// export { default as woongin } from './woongin.png'
+// export { default as loading } from './loading.gif'
