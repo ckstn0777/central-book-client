@@ -58,16 +58,15 @@ function GoogleLoginButton({}: GoogleLoginButtonProps) {
             src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
             alt="google"
           />
-          {isLoading ? '로그인중입니다' : 'Google Login'}
+          Google Login
         </button>
       )}
       buttonText="Login"
       onSuccess={onSuccess}
       onFailure={onFailure}
-      //cookiePolicy={'single_host_origin'}
+      cookiePolicy={'single_host_origin'}
       uxMode="redirect"
       isSignedIn={true}
-      redirectUri="https://central-book.ckstn0777.com/"
     />
     // <button css={ButtonStyle} ref={buttonRef}>
     //   <img
