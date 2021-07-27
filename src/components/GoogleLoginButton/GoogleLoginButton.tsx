@@ -64,9 +64,10 @@ function GoogleLoginButton({}: GoogleLoginButtonProps) {
       buttonText="Login"
       onSuccess={onSuccess}
       onFailure={onFailure}
-      cookiePolicy={'single_host_origin'}
+      //cookiePolicy={'single_host_origin'}
       uxMode="redirect"
       isSignedIn={true}
+      redirectUri="https://central-book.ckstn0777.com/"
     />
     // <button css={ButtonStyle} ref={buttonRef}>
     //   <img
