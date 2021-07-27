@@ -22,29 +22,6 @@ function GoogleLoginButton({}: GoogleLoginButtonProps) {
     console.log(error)
   }, [])
 
-  // useEffect(() => {
-  //   window.gapi.load('auth2', function () {
-  //     // Retrieve the singleton for the GoogleAuth library and set up the client.
-  //     const auth2 = window.gapi.auth2.init({
-  //       client_id:
-  //         '1038856616662-2u26cq72g75ug01c9jjs1jbu6pdhqkni.apps.googleusercontent.com',
-  //       cookiepolicy: 'single_host_origin',
-  //       // Request scopes in addition to 'profile' and 'email'
-  //       //scope: 'additional_scope'
-  //     })
-  //     auth2.attachClickHandler(buttonRef.current, {}, onSuccess, onFailure)
-  //   })
-  // }, [onSuccess, onFailure])
-
-  // return (
-  //   <button css={ButtonStyle} ref={buttonRef}>
-  //     <img
-  //       src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-  //       alt="google"
-  //     />
-  //     Sign in with Google
-  //   </button>
-  // )
   return (
     <GoogleLogin
       clientId="1038856616662-2u26cq72g75ug01c9jjs1jbu6pdhqkni.apps.googleusercontent.com"
@@ -68,13 +45,6 @@ function GoogleLoginButton({}: GoogleLoginButtonProps) {
       uxMode="redirect"
       isSignedIn={true}
     />
-    // <button css={ButtonStyle} ref={buttonRef}>
-    //   <img
-    //     src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-    //     alt="google"
-    //   />
-    //   Sign in with Google
-    // </button>
   )
 }
 

@@ -27,12 +27,6 @@ export default function useAuth() {
     history.replace('/')
   }, [signOut, setUserState, history])
 
-  // const logoutSuccess = useCallback(() => {
-  //   userStorage.clear()
-  //   setUserState(null)
-  //   history.replace('/')
-  // }, [setUserState, history])
-
   return {
     authorize,
     logout,
