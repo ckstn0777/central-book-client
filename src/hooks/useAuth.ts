@@ -9,11 +9,11 @@ export default function useAuth() {
   const { signOut } = useGoogleLogout({
     clientId:
       '1038856616662-2u26cq72g75ug01c9jjs1jbu6pdhqkni.apps.googleusercontent.com',
-    onLogoutSuccess: () => logout(),
-    //uxMode: 'redirect',
+    onLogoutSuccess: () => logoutSuccess(),
   })
   const [, setUserState] = useUserState()
   const history = useHistory()
+  // const location = new Location()
 
   const authorize = (user: User) => {
     setUserState(user)
@@ -22,10 +22,13 @@ export default function useAuth() {
 
   const logout = useCallback(() => {
     signOut()
+  }, [signOut])
+
+  const logoutSuccess = useCallback(() => {
     userStorage.clear()
     setUserState(null)
     history.replace('/')
-  }, [signOut, setUserState, history])
+  }, [setUserState, history])
 
   return {
     authorize,

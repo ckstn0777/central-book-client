@@ -11,7 +11,6 @@ function GoogleLoginButton({}: GoogleLoginButtonProps) {
 
   const onSuccess = useCallback(
     googleUser => {
-      console.log('success')
       setIsLoading(true)
       signin(googleUser.getAuthResponse(true).access_token)
     },

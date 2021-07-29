@@ -1,46 +1,20 @@
-# Getting Started with Create React App
+# Central Book
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> [센트럴 북](https://project-intern03.wjthinkbig.com/)은 여러 플랫폼 및 오프라인 도서 이용자가 쉽게 자신의 책장을 만들 수 있고 공유할 수 있는 사이트입니다. 또한 자신의 도서 통계를 차트형식으로 볼 수 있으며 캘린더를 통해 자신의 독서기록을 확인할 수 있습니다. 이 서비스는 현재 베타 테스트 중입니다.
 
-## Available Scripts
+## Project Stack
 
-In the project directory, you can run:
+### Web
 
-### `yarn start`
+웹 프로젝트는 리액트를 사용해 만들었습니다. 또한 이 프로젝트에서 사용한 라이브러리 및 기술은 다음과 같습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React(TypeScript)
+- Recoil
+- React Query
+- React Router
+- Emotion
+- ChartJS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Server
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+서버 프로젝트는 NodeJS Fastify와 TypeORM을 사용해 만들었습니다. 데이터베이스로는 AWS AuroraDB를 사용했습니다. 서버는 현재 AWS EC2에서 구동중입니다.
